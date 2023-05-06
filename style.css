@@ -1,0 +1,461 @@
+/**
+ * style.css - Style principal de la page
+ */
+
+ body {
+    background-color: #1f1f1f;
+   }
+  
+  /**
+   * Polices
+   */
+  
+  /* Moon Dance */
+  @font-face {
+    font-family: "Moon Dance";
+    src: url("assets/fonts/Moon_Dance/MoonDance-Regular.ttf");
+  }
+  
+  /* Poppins */
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-Light.ttf");
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-Bold.ttf");
+    font-weight: bold;
+  }
+  
+  /* A FAIRE: Implémenter le style de la page selon la maquette */
+  .top-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ecd537;
+    height: 0.4em;
+  }
+  
+  #logo {
+    width: 20vh;
+    margin-left: 2%;
+  }
+  
+  .navbar {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 300;
+  }
+  
+  .links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .links li {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  
+  #container-bgd-image {
+    position: relative;
+  }
+  
+  #text-container,
+  #title-container,
+  .btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  #text-container {
+    top: 42%;
+  }
+  
+  #title-container {
+    top: 47%;
+  }
+  
+  .btn {
+    top: 60%;
+  }
+  
+  
+  button {
+    background-color: #ecd537;
+    color: white;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    border-color: #ecd537;
+  }
+  
+  #container-bgd-image p {
+    margin: 0;
+  }
+  
+  #container-bgd-image h1 {
+  
+    font-family: 'Moon Dance', cursive;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+  }
+  
+  #image {
+    max-width: 100%;
+    filter: opacity(60%);
+    position: relative;
+  }
+  
+  h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 300;
+  }
+  
+  h2::before {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 2%;
+    background-color: #ecd537;
+  }
+  
+  h2::after {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-left: 2%;
+    background-color: #ecd537;
+  }
+  
+  #concept {
+    margin-top: 2em;
+  }
+  
+  #vertical-concept {
+    position: absolute;
+    left: -3%;
+    top: 0;
+  }
+  
+  #vertical-concept h1{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-family: 'Moon Dance', cursive;
+    font-size: 8em;
+    color: lightgray;
+    opacity: 10%;
+    margin: 0;
+  }
+  
+  p {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 300;
+  }
+  
+  .block {
+    display: flex;
+    margin-left: 5%;
+  }
+  
+  .container {
+    margin: 2%;
+    background-color: white;
+    width: 18vw;
+    height: 12vw;
+    border-radius: 0.3em;
+  }
+  
+  span {
+    position: relative !important;
+    left: 43% !important;
+    top: 15% !important;
+    font-size: 3em !important;
+  }
+  
+  .container p {
+    color: #1f1f1f;
+    font-size: 1em;
+    position: relative;
+    top: 20%;
+  }
+  
+  #vertical-castels {
+    position: absolute;
+    right: 0;
+  }
+  
+  #vertical-castels h1{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-family: 'Moon Dance', cursive;
+    font-size: 8em;
+    color: lightgray;
+    opacity: 10%;
+    margin: 0;
+  }
+  
+  #flexbox1 {
+    display: flex;
+    margin-left: 5%;
+  }
+  
+  #flexbox1 img {
+    width: 18vw;
+    height: 12vw;
+    margin: 2%;
+  }
+  
+  #flexbox2 {
+    display: flex;
+    margin-left: 5%;
+  }
+  
+  #flexbox2 img {
+    height: 12vw;
+    margin: 2%;
+    margin-right: 3%;
+  }
+  
+  .contact-container {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+  }
+  
+  section {
+    position: relative;
+  }
+  
+  #vertical-contact {
+    position: absolute;
+    top: -15%;
+    left: -3%;
+  }
+  
+  #vertical-contact h1{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-family: 'Moon Dance', cursive;
+    font-size: 8em;
+    color: lightgray;
+    opacity: 10%;
+    margin: 0;
+  }
+  
+  #phone {
+    margin-left: 5%;
+  }
+  
+  #email {
+    margin-left: 5%;
+  }
+  
+  #adress {
+    margin-left: 5%;
+  }
+  
+  .icon-container span {
+    background-color: white;
+    border-radius: 0.1em;
+  }
+  
+  
+  /* Style appliquer pour une largeur d'écran maximum de 1024px (tablettes) */
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    #text-container {
+      top: 30%;
+    }
+  
+    #title-container {
+      top: 40%;
+      width: 80%;
+    }
+  
+    .btn {
+      top: 65%;
+    }
+  
+    .block {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    .container {
+      background-color: white;
+      width: 18vw;
+      height: 40vh;
+      border-radius: 0.3em;
+    }
+  
+    span {
+      position: relative !important;
+      left: 35% !important;
+      top: 15% !important;
+      font-size: 3em !important;
+    }
+  
+    #flexbox1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    #flexbox1 img {
+      width: 30vw;
+      height: 20vw;
+      margin: 2%;
+    }
+  
+    #flexbox2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    #flexbox2 img {
+      width: 30vw;
+      height: 20vw;
+      margin: 2%;
+    }
+  
+    #panorama {
+      width: 50vw !important;
+      height: 20vw;
+      margin: 2%;
+    }
+  }
+  
+  
+  /* Style à appliquer pour une largeur d'écran maximum de 768px (téléphones) */
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .links {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    ul {
+      padding-left: 0;
+    }
+  
+    #logo {
+      margin: 0;
+    }
+  
+    li {
+      margin: 10% 0%;
+    }
+  
+    #text-container {
+      top: 10%;
+    }
+  
+    #title-container {
+      top: 17%;
+    }
+  
+    .btn {
+      top: 70%;
+    }
+  
+    .block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    .container {
+      background-color: white;
+      width: 30%;
+      height: 43vh;
+      border-radius: 0.3em;
+    }
+  
+    span {
+      position: relative !important;
+      left: 35% !important;
+      top: 15% !important;
+      font-size: 3em !important;
+    }
+  
+    #flexbox1 {
+      display: flex;
+      margin-left: 5%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #flexbox1 img {
+      margin: 2%;
+      width: 60%;
+      height: 15%;
+    }
+  
+    #flexbox2 {
+      display: flex;
+      margin-left: 5%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #flexbox2 img {
+      margin: 2%;
+      width: 60%;
+      height: 18%;
+    }
+  
+    .contact-container {
+      margin-left: 0%;
+    }
+  
+    #vertical-contact {
+      left: -12%;
+      top: 0%
+    }
+  
+    #vertical-concept {
+      left: -6%;
+    }
+  }
